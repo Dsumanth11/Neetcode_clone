@@ -23,9 +23,9 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING,async function(err){
     }
     else{
         console.log("DB Connection Succesfully");     
-        await courseLib.CreateFirstCourse();  
-        const ans=await courseLib.getAllCourses();
-        console.log(ans); 
+        // await courseLib.CreateFirstCourse();  
+        // const ans=await courseLib.getAllCourses();
+        // console.log(ans); 
         app.listen(port,function(){
             console.log(`Server running on http://localhost:${port}/`);
         });
